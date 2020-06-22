@@ -1607,6 +1607,7 @@ int irq_chip_pm_get(struct irq_data *data)
 
 	return 0;
 }
+EXPORT_SYMBOL_GPL(irq_chip_pm_get);
 
 /**
  * irq_chip_pm_put - Disable power for an IRQ chip
@@ -1625,3 +1626,4 @@ int irq_chip_pm_put(struct irq_data *data)
 
 	return (retval < 0) ? retval : 0;
 }
+EXPORT_SYMBOL_GPL(irq_chip_pm_put);
