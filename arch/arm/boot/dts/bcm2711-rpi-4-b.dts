@@ -12,7 +12,7 @@
 
 	chosen {
 		/* 8250 auxiliary UART instead of pl011 */
-		stdout-path = "serial1:115200n8";
+		stdout-path = "serial0:115200n8";
 	};
 
 	/* Will be filled by the bootloader */
@@ -25,6 +25,8 @@
 		emmc2bus = &emmc2bus;
 		ethernet0 = &genet;
 		pcie0 = &pcie0;
+		serial0 = &uart1;
+		serial1 = &uart0;
 	};
 
 	leds {
