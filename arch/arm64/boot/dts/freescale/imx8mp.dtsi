@@ -2132,7 +2132,7 @@
 		};
 
 		pcie: pcie@33800000 {
-			compatible = "fsl,imx8mp-pcie", "snps,dw-pcie";
+			compatible = "fsl,imx8mp-pcie";
 			reg = <0x33800000 0x400000>, <0x1ff00000 0x80000>;
 			reg-names = "dbi", "config";
 			#address-cells = <3>;
