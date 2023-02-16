@@ -52,5 +52,10 @@ dtb-$(CONFIG_ARCH_MXC) += imx8qxp-colibri-eval-v3.dtb
 dtb-$(CONFIG_ARCH_MXC) += imx8qxp-mek.dtb
 
 dtb-$(CONFIG_ARCH_MXC) += imx8mp-phyboard-pollux-rdk.dtb
+dtb-$(CONFIG_ARCH_MXC) += imx8mp-rsb3720-a1-lvds0-auo.dtb \
+			  imx8mp-rsb3720-a1-lvds1-auo.dtb \
+			  imx8mp-rsb3720-a1-lvds-dual.dtb \
+			  imx8mp-rsb3720-a1-adv7535.dtb \
+			  imx8mp-rsb3720-a1.dtb
 
 dtb-$(CONFIG_ARCH_S32) += s32v234-evb.dtb
