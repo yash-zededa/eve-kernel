@@ -435,6 +435,7 @@ config GPIO_SCU
 
 config GPIO_ARCH_ADVANTECH
 	def_bool y
+	depends on ARCH_ADVANTECH
 	depends on GPIOLIB
 	help
 		Set GPIO direction.
