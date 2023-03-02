@@ -5241,10 +5241,17 @@ int stmmac_dvr_probe(struct device *device,
 	stmmac_init_fs(ndev);
 #endif
 
+/* On i.MX8M Plus platform an issue with bridge mode is observed, causing
+ * the whole system to freeze because register access is performed while
+ * clocks are disabled. As a workaround, lets keep clocks enabled on this
+ * platform.
+ */
+#ifndef CONFIG_ARCH_MXC
 	/* Let pm_runtime_put() disable the clocks.
 	 * If CONFIG_PM is not enabled, the clocks will stay powered.
 	 */
 	pm_runtime_put(device);
+#endif
 
 	return ret;
 
