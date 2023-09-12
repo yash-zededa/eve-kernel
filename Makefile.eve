@@ -1,7 +1,7 @@
 # Title: Dockerfile for building the EVE kernel
 VERSION=$(shell git describe --always --dirty)
 EVE_FLAVOR=generic
-ARCHITECTURE=amd64
+ARCHITECTURE=arm64
 KERNEL_TAG=$(shell git describe --tags --abbrev=0)
 BRANCH=eve-kernel-$(ARCHITECTURE)-$(KERNEL_TAG)-$(EVE_FLAVOR)
 PLATFORM=linux/$(ARCHITECTURE)
