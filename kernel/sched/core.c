@@ -2267,7 +2267,7 @@ void migrate_disable(void)
 	preempt_lazy_disable();
 	preempt_enable();
 }
-EXPORT_SYMBOL_GPL(migrate_disable);
+EXPORT_SYMBOL(migrate_disable);
 
 void migrate_enable(void)
 {
@@ -2299,7 +2299,7 @@ void migrate_enable(void)
 	preempt_lazy_enable();
 	preempt_enable();
 }
-EXPORT_SYMBOL_GPL(migrate_enable);
+EXPORT_SYMBOL(migrate_enable);
 
 static inline bool rq_has_pinned_tasks(struct rq *rq)
 {
