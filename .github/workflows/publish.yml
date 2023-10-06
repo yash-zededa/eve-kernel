@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   packages:
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
       - name: Get eve-kernel
         uses: actions/checkout@v3
