@@ -5,6 +5,7 @@ on:  # yamllint disable-line rule:truthy
   pull_request:
     branches:
       - "master"
+      - "eve-kernel-amd64-v6.1.38-generic"
       - "[0-9]+.[0-9]+"
       - "[0-9]+.[0-9]+-stable"
 
@@ -19,7 +20,7 @@ jobs:
       - name: Get eve-kernel
         uses: actions/checkout@v3
         with:
-          ref: 'eve-kernel-amd64-v6.1.38-generic'
+          ref: "eve-kernel-amd64-v6.1.38-generic"
       - name: Build eve-kernel-amd64-v6.1.38-generic
         run: |
           make -f Makefile.eve kernel-gcc
